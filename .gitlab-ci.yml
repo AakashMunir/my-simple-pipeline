@@ -4,15 +4,15 @@ stages:
 
 
 build:
-    -stage:build
-    -script:
-         -echo "Buliding"
+    stage: build
+    script:
+         -echo "Building"
          -mkdir build
          -touch build/info.txt
          
          
 test:
-    -stage: test
-    -script:
+    stage: test
+    script:
          -echo "testing"
          -test -f "build/info.txt"
